@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-rhaap-portal
+  description: test
+  tags:
+    - execution-environment
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/managed-by-location: github.com?repo=test-ee-1&owner=test-rhaap-portal
+    ansible.io/scm-provider: Github
+    backstage.io/source-template: template:default/ansible-execution-environment-builder-cloud-automation
+spec:
+  type: execution-environment
+  owner: user:default/admin
+  lifecycle: production
